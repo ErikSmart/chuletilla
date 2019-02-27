@@ -105,8 +105,6 @@ importar\.js
 
 index\.html
 
-jquery/jquery2\.js
-
 query2\.html
 
 query2\.js
@@ -122,5 +120,3 @@ websockets/datos\.html
 websockets/web\.html
 
 websockets/web\.js
-
-query\.html
