@@ -147,7 +147,7 @@ function calcularCuadrado(x) {
 
 }
 
-function accionDatos() {  
+function accionDatos() {
   var valor =  $("#cuadrado").val();
   var datos = $.getJSON("cuadrado.php",{numero:valor},llegadaDatos);
 }
