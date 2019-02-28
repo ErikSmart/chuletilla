@@ -35,5 +35,4 @@ function sugerir() {
     let y = document.getElementById('busca').value = x.innerHTML;
     console.log(`Este es el valor de ${y}`);
     document.getElementById('respuesta').innerHTML = "";
-console.log(`Este es el valor de`);
   }
