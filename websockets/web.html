@@ -1,17 +1,23 @@
 <!DOCTYPE html>
 <html lang="es" dir="ltr">
-  <head>
-    <meta charset="utf-8">
-    <title>Web</title>
-  </head>
-  <body>
-    <form method="get" action="datos.html">
 
-<button type="submit" name="button">Enviar</button>
-    </form>
-<button type="submit" name="button" id="btn">Enviar</button>
-<span id="respuesta"></span>
+<head>
+  <meta charset="utf-8">
+  <title>Web</title>
+</head>
 
-<script src="web.js" charset="utf-8"></script>
-  </body>
+<body>
+  <form method="get" action="datos.html">
+    <button type="submit" name="button">Respuesta directa</button>
+  </form>
+  <button type="submit" name="button" id="btn">Con ajax</button>
+  <span id="resultado"></span>
+
+
+  <input type="text" name="" value="" id="buscar" autocomplete="off">
+  <span id="respuesta"></span>
+
+  <script src="web.js" charset="utf-8"></script>
+</body>
+
 </html>
