@@ -68,3 +68,46 @@ function accion() {
   }
 
 }
+//promesa
+let nombre;
+
+var promesa = () => {
+  let miPromesa = new Promise((ok, nook) => {
+    if (nombre == null) {
+      ok();
+    } else {
+      nook();
+    }
+  });
+  return miPromesa;
+
+}
+
+var cumple = () => { console.log("Se cumplio la promesa"); };
+var rompe = () => { console.log(`No se cumplio`); }
+
+promesa().then(cumple, rompe);
+
+//promesa modo simple
+new Promise((aceptar, rechazar) => {
+  aceptar();
+}).then(() => {
+  console.log("Realizando acciones")
+});
+//Promesa
+function getPosts() {
+  return new Promise(function(resolve, reject) {
+    var req = new XMLHttpRequest();
+    req.open('GET', 'https://jsonplaceholder.typicode.com/posts');
+
+    req.onload = function() {
+      if (req.readyState == 4) {
+        resolve(JSON.parse(req.response));
+      } else {
+        reject();
+      }
+    };
+
+    req.send();
+  })
+}
